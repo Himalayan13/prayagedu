@@ -1,0 +1,1642 @@
+digraph {
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.627]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.351]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.672]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.167]
+	1
+	DiabetesPedigreeFunction -> 1 [label=2.288]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.201]
+	0.248
+	DiabetesPedigreeFunction -> 0.248
+	Pregnancies
+	0.248 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=3]
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.134]
+	0.158
+	DiabetesPedigreeFunction -> 0.158
+	Glucose
+	0.158 -> Glucose
+	1
+	Glucose -> 1 [label=197]
+	0
+	Glucose -> 0 [label=108]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.232]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.191]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.537]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.441]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.398]
+	0.587
+	DiabetesPedigreeFunction -> 0.587
+	Glucose
+	0.587 -> Glucose
+	1
+	Glucose -> 1 [label=166]
+	0
+	Glucose -> 0 [label=44]
+	0
+	Glucose -> 0 [label=91]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.484]
+	0.551
+	DiabetesPedigreeFunction -> 0.551
+	Pregnancies
+	0.551 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	Pregnancies -> 0 [label=3]
+	0
+	Pregnancies -> 0 [label=8]
+	0
+	Pregnancies -> 0 [label=1]
+	0.254
+	DiabetesPedigreeFunction -> 0.254
+	Glucose
+	0.254 -> Glucose
+	1
+	Glucose -> 1 [label=107]
+	1
+	Glucose -> 1 [label=143]
+	1
+	Glucose -> 1 [label=187]
+	0
+	Glucose -> 0 [label=122]
+	0
+	Glucose -> 0 [label=161]
+	1
+	Glucose -> 1 [label=124]
+	0.183
+	DiabetesPedigreeFunction -> 0.183
+	Pregnancies
+	0.183 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=8]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.529]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.704]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.388]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.451]
+	0.263
+	DiabetesPedigreeFunction -> 0.263
+	Pregnancies
+	0.263 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=9]
+	0
+	Pregnancies -> 0 [label=5]
+	0
+	Pregnancies -> 0 [label=10]
+	0
+	Pregnancies -> 0 [label=0]
+	0.205
+	DiabetesPedigreeFunction -> 0.205
+	Pregnancies
+	0.205 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=10]
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=0]
+	0.257
+	DiabetesPedigreeFunction -> 0.257
+	Pregnancies
+	0.257 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=7]
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=13]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.487]
+	0.245
+	DiabetesPedigreeFunction -> 0.245
+	Pregnancies
+	0.245 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=13]
+	0
+	Pregnancies -> 0 [label=10]
+	1
+	Pregnancies -> 1 [label=6]
+	0
+	Pregnancies -> 0 [label=5]
+	0.337
+	DiabetesPedigreeFunction -> 0.337
+	Pregnancies
+	0.337 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=5]
+	1
+	Pregnancies -> 1 [label=7]
+	1
+	Pregnancies -> 1 [label=2]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.546]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.851]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.267]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.188]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.512]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.966]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.42]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.665]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.503]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.39]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.271]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.696]
+	0.235
+	DiabetesPedigreeFunction -> 0.235
+	Pregnancies
+	0.235 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=7]
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=4]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.721]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.294]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.893]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.564]
+	0.586
+	DiabetesPedigreeFunction -> 0.586
+	Pregnancies
+	0.586 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=7]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.344]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.305]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.491]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.526]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.342]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.467]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.718]
+	0.962
+	DiabetesPedigreeFunction -> 0.962
+	Pregnancies
+	0.962 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=0]
+	1
+	Pregnancies -> 1 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.781]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.173]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.304]
+	0.27
+	DiabetesPedigreeFunction -> 0.27
+	Glucose
+	0.27 -> Glucose
+	1
+	Glucose -> 1 [label=133]
+	1
+	Glucose -> 1 [label=131]
+	0
+	Glucose -> 0 [label=78]
+	0
+	Glucose -> 0 [label=152]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.699]
+	0.258
+	DiabetesPedigreeFunction -> 0.258
+	Pregnancies
+	0.258 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=7]
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	Pregnancies -> 0 [label=10]
+	1
+	Pregnancies -> 1 [label=3]
+	0
+	Pregnancies -> 0 [label=5]
+	1
+	Pregnancies -> 1 [label=0]
+	0.203
+	DiabetesPedigreeFunction -> 0.203
+	Pregnancies
+	0.203 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=5]
+	1
+	Pregnancies -> 1 [label=0]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.855]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.845]
+	0.334
+	DiabetesPedigreeFunction -> 0.334
+	Pregnancies
+	0.334 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.189]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.867]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.411]
+	0.583
+	DiabetesPedigreeFunction -> 0.583
+	Pregnancies
+	0.583 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=13]
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.231]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.396]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.14]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.391]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.37]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.307]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.102]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.767]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.237]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.227]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.698]
+	0.178
+	DiabetesPedigreeFunction -> 0.178
+	Pregnancies
+	0.178 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=13]
+	1
+	Pregnancies -> 1 [label=6]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.324]
+	0.153
+	DiabetesPedigreeFunction -> 0.153
+	Pregnancies
+	0.153 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=15]
+	0
+	Pregnancies -> 0 [label=5]
+	0.165
+	DiabetesPedigreeFunction -> 0.165
+	Pregnancies
+	0.165 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=7]
+	1
+	Pregnancies -> 1 [label=8]
+	0.443
+	DiabetesPedigreeFunction -> 0.443
+	Pregnancies
+	0.443 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=4]
+	1
+	Pregnancies -> 1 [label=8]
+	0.261
+	DiabetesPedigreeFunction -> 0.261
+	Pregnancies
+	0.261 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=7]
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=5]
+	1
+	Pregnancies -> 1 [label=10]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.277]
+	0.761
+	DiabetesPedigreeFunction -> 0.761
+	Pregnancies
+	0.761 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=3]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.255]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.13]
+	0.323
+	DiabetesPedigreeFunction -> 0.323
+	Pregnancies
+	0.323 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=3]
+	0.356
+	DiabetesPedigreeFunction -> 0.356
+	Pregnancies
+	0.356 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=6]
+	1
+	Pregnancies -> 1 [label=3]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.325]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.222]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.179]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.262]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.283]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.93]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.801]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.207]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.287]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.336]
+	0.247
+	DiabetesPedigreeFunction -> 0.247
+	Pregnancies
+	0.247 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	Pregnancies -> 0 [label=6]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.199]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.543]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.192]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.588]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.539]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.22]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.654]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.223]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.759]
+	0.26
+	DiabetesPedigreeFunction -> 0.26
+	Pregnancies
+	0.26 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=6]
+	1
+	Pregnancies -> 1 [label=9]
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=11]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.404]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.186]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.278]
+	0.496
+	DiabetesPedigreeFunction -> 0.496
+	Glucose
+	0.496 -> Glucose
+	1
+	Glucose -> 1 [label=88]
+	0
+	Glucose -> 0 [label=102]
+	0
+	Glucose -> 0 [label=116]
+	0.452
+	DiabetesPedigreeFunction -> 0.452
+	Pregnancies
+	0.452 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=3]
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	Pregnancies -> 0 [label=0]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.403]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.741]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.361]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.114]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.457]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.647]
+	0.088
+	DiabetesPedigreeFunction -> 0.088
+	Pregnancies
+	0.088 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.597]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.532]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.703]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.159]
+	0.268
+	DiabetesPedigreeFunction -> 0.268
+	Glucose
+	0.268 -> Glucose
+	0
+	Glucose -> 0 [label=128]
+	0
+	Glucose -> 0 [label=73]
+	1
+	Glucose -> 1 [label=163]
+	0
+	Glucose -> 0 [label=130]
+	1
+	Glucose -> 1 [label=169]
+	0.286
+	DiabetesPedigreeFunction -> 0.286
+	Glucose
+	0.286 -> Glucose
+	0
+	Glucose -> 0 [label=106]
+	1
+	Glucose -> 1 [label=136]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.318]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.272]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.572]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.096]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.4]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.218]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.085]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.399]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.432]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.189]
+	0.687
+	DiabetesPedigreeFunction -> 0.687
+	Pregnancies
+	0.687 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	Pregnancies -> 0 [label=7]
+	1
+	Pregnancies -> 1 [label=8]
+	0.137
+	DiabetesPedigreeFunction -> 0.137
+	Pregnancies
+	0.137 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=8]
+	0
+	Pregnancies -> 0 [label=12]
+	0.637
+	DiabetesPedigreeFunction -> 0.637
+	Pregnancies
+	0.637 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=9]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.833]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.229]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.817]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.204]
+	0.368
+	DiabetesPedigreeFunction -> 0.368
+	Pregnancies
+	0.368 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=6]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.743]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.722]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.256]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.709]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.471]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.495]
+	0.18
+	DiabetesPedigreeFunction -> 0.18
+	Pregnancies
+	0.18 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=6]
+	0
+	Pregnancies -> 0 [label=13]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.542]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.773]
+	0.678
+	DiabetesPedigreeFunction -> 0.678
+	Pregnancies
+	0.678 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=3]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.719]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.382]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.319]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.19]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.956]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.084]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.725]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.299]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.244]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.745]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.615]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.321]
+	0.64
+	DiabetesPedigreeFunction -> 0.64
+	Pregnancies
+	0.64 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=8]
+	0
+	Pregnancies -> 0 [label=5]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.142]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.374]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.383]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.578]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.136]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.395]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.187]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.905]
+	0.15
+	DiabetesPedigreeFunction -> 0.15
+	Pregnancies
+	0.15 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=4]
+	0
+	Pregnancies -> 0 [label=3]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.874]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.236]
+	0.787
+	DiabetesPedigreeFunction -> 0.787
+	Pregnancies
+	0.787 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=0]
+	1
+	Pregnancies -> 1 [label=7]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.407]
+	0.605
+	DiabetesPedigreeFunction -> 0.605
+	Pregnancies
+	0.605 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=8]
+	0
+	Pregnancies -> 0 [label=0]
+	0.151
+	DiabetesPedigreeFunction -> 0.151
+	Pregnancies
+	0.151 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	Pregnancies -> 0 [label=6]
+	0
+	Pregnancies -> 0 [label=3]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.289]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.355]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.29]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.375]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.164]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.431]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.742]
+	0.514
+	DiabetesPedigreeFunction -> 0.514
+	Pregnancies
+	0.514 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.464]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.224]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.072]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.805]
+	0.209
+	DiabetesPedigreeFunction -> 0.209
+	Pregnancies
+	0.209 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=7]
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.666]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.101]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.198]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.652]
+	0
+	DiabetesPedigreeFunction -> 0 [label=2.329]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.089]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.645]
+	0.238
+	DiabetesPedigreeFunction -> 0.238
+	Pregnancies
+	0.238 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=6]
+	0
+	Pregnancies -> 0 [label=0]
+	1
+	Pregnancies -> 1 [label=4]
+	0
+	Pregnancies -> 0 [label=3]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.394]
+	0.293
+	DiabetesPedigreeFunction -> 0.293
+	Pregnancies
+	0.293 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=3]
+	1
+	Pregnancies -> 1 [label=1]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.479]
+	0.686
+	DiabetesPedigreeFunction -> 0.686
+	Glucose
+	0.686 -> Glucose
+	1
+	Glucose -> 1 [label=179]
+	0
+	Glucose -> 0 [label=107]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.831]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.582]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.446]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.402]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.318]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.329]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.213]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.427]
+	0.282
+	DiabetesPedigreeFunction -> 0.282
+	Pregnancies
+	0.282 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=9]
+	1
+	Pregnancies -> 1 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.143]
+	0.38
+	DiabetesPedigreeFunction -> 0.38
+	Pregnancies
+	0.38 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=9]
+	1
+	Pregnancies -> 1 [label=4]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.284]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.249]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.926]
+	0.557
+	DiabetesPedigreeFunction -> 0.557
+	Pregnancies
+	0.557 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=3]
+	1
+	Pregnancies -> 1 [label=11]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.092]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.655]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.353]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.612]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.2]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.226]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.997]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.933]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.101]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.078]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.24]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.136]
+	0.128
+	DiabetesPedigreeFunction -> 0.128
+	Pregnancies
+	0.128 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=7]
+	0.422
+	DiabetesPedigreeFunction -> 0.422
+	Pregnancies
+	0.422 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=2]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.251]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.677]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.296]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.454]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.744]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.881]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.28]
+	0.259
+	DiabetesPedigreeFunction -> 0.259
+	Pregnancies
+	0.259 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=2]
+	0
+	Pregnancies -> 0 [label=0]
+	0
+	Pregnancies -> 0 [label=12]
+	1
+	Pregnancies -> 1 [label=8]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.619]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.808]
+	0.34
+	DiabetesPedigreeFunction -> 0.34
+	Pregnancies
+	0.34 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=4]
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	Pregnancies -> 0 [label=2]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.434]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.757]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.613]
+	0.692
+	DiabetesPedigreeFunction -> 0.692
+	Glucose
+	0.692 -> Glucose
+	0
+	Glucose -> 0 [label=151]
+	1
+	Glucose -> 1 [label=122]
+	0
+	Glucose -> 0 [label=130]
+	1
+	Glucose -> 1 [label=150]
+	0.52
+	DiabetesPedigreeFunction -> 0.52
+	Pregnancies
+	0.52 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=0]
+	1
+	Pregnancies -> 1 [label=4]
+	0
+	Pregnancies -> 0 [label=2]
+	0.412
+	DiabetesPedigreeFunction -> 0.412
+	Pregnancies
+	0.412 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=14]
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.84]
+	0.839
+	DiabetesPedigreeFunction -> 0.839
+	Pregnancies
+	0.839 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	Pregnancies -> 0 [label=6]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.156]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.215]
+	0.326
+	DiabetesPedigreeFunction -> 0.326
+	Pregnancies
+	0.326 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=10]
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.391]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.875]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.313]
+	0.433
+	DiabetesPedigreeFunction -> 0.433
+	Pregnancies
+	0.433 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=2]
+	0
+	Pregnancies -> 0 [label=0]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.626]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.127]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.315]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.345]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.129]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.527]
+	0.197
+	DiabetesPedigreeFunction -> 0.197
+	Pregnancies
+	0.197 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=3]
+	0
+	Pregnancies -> 0 [label=0]
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.731]
+	0.148
+	DiabetesPedigreeFunction -> 0.148
+	Pregnancies
+	0.148 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	0
+	Pregnancies -> 0 [label=4]
+	1
+	Pregnancies -> 1 [label=9]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.123]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.127]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.122]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.476]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.166]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.932]
+	0.343
+	DiabetesPedigreeFunction -> 0.343
+	Pregnancies
+	0.343 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.893]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.331]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.472]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.673]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.389]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.485]
+	0.349
+	DiabetesPedigreeFunction -> 0.349
+	Pregnancies
+	0.349 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=8]
+	1
+	Pregnancies -> 1 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.279]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.346]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.252]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.243]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.58]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.559]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.302]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.569]
+	0.378
+	DiabetesPedigreeFunction -> 0.378
+	Pregnancies
+	0.378 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=12]
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.385]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.499]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.306]
+	0.234
+	DiabetesPedigreeFunction -> 0.234
+	Glucose
+	0.234 -> Glucose
+	1
+	Glucose -> 1 [label=133]
+	0
+	Glucose -> 0 [label=91]
+	1
+	DiabetesPedigreeFunction -> 1 [label=2.137]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.731]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.545]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.225]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.816]
+	0.528
+	DiabetesPedigreeFunction -> 0.528
+	Pregnancies
+	0.528 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=12]
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.509]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.021]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.821]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.947]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.268]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.221]
+	0.66
+	DiabetesPedigreeFunction -> 0.66
+	Pregnancies
+	0.66 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=5]
+	0
+	Pregnancies -> 0 [label=0]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.239]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.949]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.444]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.463]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.803]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.6]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.944]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.196]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.241]
+	0.161
+	DiabetesPedigreeFunction -> 0.161
+	Pregnancies
+	0.161 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=4]
+	0
+	Pregnancies -> 0 [label=7]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.135]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.376]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.191]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.702]
+	0.674
+	DiabetesPedigreeFunction -> 0.674
+	Pregnancies
+	0.674 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=6]
+	1
+	Pregnancies -> 1 [label=2]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.076]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.534]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.095]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.554]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.624]
+	0.219
+	DiabetesPedigreeFunction -> 0.219
+	Pregnancies
+	0.219 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=3]
+	0
+	Pregnancies -> 0 [label=1]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.507]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.561]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.421]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.516]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.264]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.328]
+	0.233
+	DiabetesPedigreeFunction -> 0.233
+	Pregnancies
+	0.233 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=1]
+	0
+	Pregnancies -> 0 [label=0]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.108]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.138]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.147]
+	0.727
+	DiabetesPedigreeFunction -> 0.727
+	Glucose
+	0.727 -> Glucose
+	0
+	Glucose -> 0 [label=107]
+	1
+	Glucose -> 1 [label=0]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.435]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.497]
+	0.23
+	DiabetesPedigreeFunction -> 0.23
+	Pregnancies
+	0.23 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=4]
+	1
+	Pregnancies -> 1 [label=9]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.955]
+	1
+	DiabetesPedigreeFunction -> 1 [label=2.42]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.658]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.33]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.51]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.285]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.415]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.381]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.832]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.498]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.212]
+	0.364
+	DiabetesPedigreeFunction -> 0.364
+	Pregnancies
+	0.364 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=5]
+	1
+	Pregnancies -> 1 [label=0]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.001]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.46]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.733]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.416]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.705]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.022]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.269]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.6]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.571]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.607]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.17]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.21]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.126]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.711]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.466]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.162]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.419]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.63]
+	0.365
+	DiabetesPedigreeFunction -> 0.365
+	Pregnancies
+	0.365 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	Pregnancies -> 0 [label=1]
+	0.536
+	DiabetesPedigreeFunction -> 0.536
+	Pregnancies
+	0.536 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=1]
+	1
+	Pregnancies -> 1 [label=4]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.159]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.629]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.292]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.145]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.144]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.174]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.547]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.163]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.738]
+	0.314
+	DiabetesPedigreeFunction -> 0.314
+	Pregnancies
+	0.314 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	Pregnancies -> 0 [label=3]
+	0.968
+	DiabetesPedigreeFunction -> 0.968
+	Pregnancies
+	0.968 -> Pregnancies
+	0
+	Pregnancies -> 0 [label=2]
+	1
+	Pregnancies -> 1 [label=3]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.409]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.297]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.525]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.154]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.771]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.107]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.493]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.717]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.917]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.501]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.251]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.735]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.804]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.661]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.549]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.825]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.423]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.034]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.16]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.341]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.68]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.591]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.3]
+	0.121
+	DiabetesPedigreeFunction -> 0.121
+	Pregnancies
+	0.121 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=6]
+	0
+	Pregnancies -> 0 [label=3]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.502]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.401]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.601]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.748]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.338]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.43]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.892]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.813]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.693]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.575]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.371]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.206]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.417]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.154]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.925]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.175]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.699]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.682]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.194]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.4]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.1]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.258]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.482]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.138]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.593]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.878]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.157]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.282]
+	0.141
+	DiabetesPedigreeFunction -> 0.141
+	Pregnancies
+	0.141 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	1
+	Pregnancies -> 1 [label=10]
+	0
+	Pregnancies -> 0 [label=2]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.246]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.698]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.461]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.347]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.362]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.393]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.144]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.732]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.115]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.465]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.649]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.871]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.149]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.695]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.303]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.61]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.73]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.447]
+	0.455
+	DiabetesPedigreeFunction -> 0.455
+	Pregnancies
+	0.455 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=0]
+	0
+	Pregnancies -> 0 [label=2]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.133]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.155]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.162]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.292]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.182]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.394]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.217]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.631]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.88]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.614]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.332]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.366]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.181]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.828]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.335]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.856]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.886]
+	0.439
+	DiabetesPedigreeFunction -> 0.439
+	Pregnancies
+	0.439 -> Pregnancies
+	1
+	Pregnancies -> 1 [label=7]
+	0
+	Pregnancies -> 0 [label=5]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.253]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.598]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.904]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.483]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.565]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.118]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.177]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.176]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.295]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.441]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.352]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.826]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.97]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.595]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.317]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.265]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.646]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.426]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.56]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.515]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.453]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.785]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.734]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.174]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.488]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.358]
+	0
+	DiabetesPedigreeFunction -> 0 [label=1.096]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.408]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.182]
+	1
+	DiabetesPedigreeFunction -> 1 [label=0.222]
+	1
+	DiabetesPedigreeFunction -> 1 [label=1.057]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.766]
+	0
+	DiabetesPedigreeFunction -> 0 [label=0.171]
+}

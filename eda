@@ -1,0 +1,73 @@
+import fetch
+import preprocess  # Ensure preprocess_data function is imported from preprocess.py
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Configure matplotlib for better visualization
+sns.set(style="whitegrid")
+
+def perform_eda(df):
+    # Display basic information about the dataset
+    print("Basic Information:")
+    print(df.info())
+    print("\nFirst few rows of the dataset:")
+    print(df.head())
+    print("\nStatistical summary of the dataset:")
+    print(df.describe())
+
+    # Check for missing values
+    print("\nMissing Values Analysis:")
+    print(df.isnull().sum())
+
+    # Univariate Analysis
+    print("\nUnivariate Analysis:")
+    plt.figure(figsize=(10, 6))
+    sns.countplot(x='ActivityName', data=df, order=df['ActivityName'].value_counts().index)
+    plt.title('Distribution of Activity Names')
+    plt.xticks(rotation=90)
+    plt.show()
+
+    plt.figure(figsize=(6, 4))
+    sns.countplot(x='isMobile', data=df)
+    plt.title('Distribution of isMobile')
+    plt.show()
+
+    plt.figure(figsize=(10, 6))
+    sns.histplot(df['ActivityDateTime'], bins=30, kde=True)
+    plt.title('Distribution of ActivityDateTime')
+    plt.show()
+
+    # Bivariate Analysis
+    print("\nBivariate Analysis:")
+    plt.figure(figsize=(10, 6))
+    sns.countplot(x='isMobile', hue='IsWeekend', data=df)
+    plt.title('isMobile vs IsWeekend')
+    plt.show()
+
+    # Time Series Analysis
+    print("\nTime Series Analysis:")
+    df.set_index('ActivityDateTime', inplace=True)
+    df['ActivityCount'] = 1  # Add a column for counting activities
+    df['ActivityCount'].resample('D').sum().plot(figsize=(14, 7))
+    plt.title('Daily Activity Count Over Time')
+    plt.xlabel('Date')
+    plt.ylabel('Activity Count')
+    plt.show()
+
+    # Weekend Activity Analysis
+    print("\nWeekend Activity Analysis:")
+    weekend_df = df[df['IsWeekend'] == True]
+    plt.figure(figsize=(10, 6))
+    sns.countplot(x='ActivityName', data=weekend_df, order=weekend_df['ActivityName'].value_counts().index)
+    plt.title('Distribution of Activity Names on Weekends')
+    plt.xticks(rotation=90)
+    plt.show()
+
+if __name__ == "__main__":
+    data = fetch.fetch_users()
+    if data:
+        processed_data = preprocess.preprocess_data(data)
+        perform_eda(processed_data)
+    else:
+        print("No data fetched")

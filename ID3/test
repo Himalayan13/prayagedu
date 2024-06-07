@@ -1,0 +1,8 @@
+import pandas as pd 
+from sklearn.tree import DecisionTreeClassifier, plot_tree 
+import matplotlib.pyplot as plt 
+import math
+
+# Load the dataset into a DataFrame
+df = pd.read_csv('D:/diabetes.csv')
+df.head()

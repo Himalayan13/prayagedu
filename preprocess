@@ -1,0 +1,43 @@
+# preprocess.py
+import fetch
+import pandas as pd
+
+def preprocess_data(data):
+    """ Preprocess the fetched data """
+    # Convert to DataFrame for easier manipulation
+    df = pd.DataFrame(data)
+    
+    # Indicate that preprocessing has started
+    print("Starting preprocessing...")
+
+    # Debugging: print the DataFrame to inspect its structure
+    print("Data before preprocessing:")
+    print(df.head())  # Print the first few rows to inspect
+
+    # Example preprocessing steps:
+    # 1. Handle missing values
+    df.fillna({'ActivityName': 'Unknown', 'isMobile': 0}, inplace=True)
+    
+    # 2. Convert ActivityDateTime to datetime format
+    df['ActivityDateTime'] = pd.to_datetime(df['ActivityDateTime'], errors='coerce')
+    
+    # 3. Create a new column 'IsWeekend' to indicate if the activity was on a weekend
+    df['IsWeekend'] = df['ActivityDateTime'].apply(lambda x: x.weekday() >= 5)
+
+    # Indicate that preprocessing has finished
+    print("Preprocessing completed.")
+
+    # Debugging: print the DataFrame after adding IsWeekend column
+    print("Data after adding IsWeekend column:")
+    print(df.head())  # Print the first few rows to inspect
+
+    return df
+
+if __name__ == "__main__":
+    data = fetch.fetch_users()
+    if data:
+        processed_data = preprocess_data(data)
+        print("IsWeekend column data:")
+        print(processed_data[['ActivityName', 'UserID', 'IsWeekend']].head())
+    else:
+        print("No data fetched")
