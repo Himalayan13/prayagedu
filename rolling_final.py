@@ -34,7 +34,7 @@ def mode(series):
     return Counter(series).most_common(1)[0][0]
 
 # Group by user_id and apply rolling window of 10 seconds
-result = df.groupby('UserID')['Activity_index'].rolling('30S').apply(lambda x: mode(x), raw=False)
+result = df.groupby('UserID')['Activity_index'].rolling(' ').apply(lambda x: mode(x), raw=False)
 
 # Reset index to make it more readable
 result = result.reset_index()
