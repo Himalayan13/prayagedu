@@ -70,10 +70,10 @@ print(report)
 
 # Add a new test record
 new_test_data = pd.DataFrame({
-    'ActivityDateTime': [pd.to_datetime('2024-05-02 23:05:30')],
+    'ActivityDateTime': [pd.to_datetime('2024-05-02 22:30:30')],
     'UserID': [52],
-    'hour': [23],
-    'minute': [5]
+    'hour': [22],
+    'minute': [30]
 })
 
 # Extract features from the new test record

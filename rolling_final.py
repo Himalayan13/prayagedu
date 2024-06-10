@@ -50,3 +50,9 @@ filtered_result = result[result['ActivityDateTime'].dt.second % 30 == 0]
 
 print("\nRolling Window Result with Most Frequent Activity (filtered at 10-second intervals):")
 print(filtered_result)
+
+# Load the filtered result from the CSV file
+filtered_result = pd.read_csv('filtered_result.csv')
+
+print("Loaded Filtered Result:")
+print(filtered_result)
