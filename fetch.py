@@ -10,7 +10,7 @@ def fetch_users():
             cursor = connection.cursor(dictionary=True)
             query = """
                 SELECT ActivityName, UserID, ActivityDateTime 
-                FROM administration_activity_logs limit 20
+                FROM administration_activity_logs limit 200
             """
             cursor.execute(query)
             records = cursor.fetchall()
