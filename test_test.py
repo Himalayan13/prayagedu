@@ -4,21 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import classification_report, accuracy_score
 
-# Provided dataset
-data = {
-    'ActivityDateTime': [
-        '2024-05-02 16:54:30', '2024-05-03 21:54:30', '2024-05-03 21:54:30',
-        '2024-05-02 23:05:30', '2024-05-02 23:05:30', '2024-05-04 12:21:00',
-        '2024-05-04 13:48:30', '2024-05-04 14:03:30', '2024-05-04 14:03:30'
-    ],
-    'UserID': [2, 38, 38, 52, 104, 199, 430, 683, 683],
-    'Most_Frequent_Activity': [
-        'RemarkScreen', 'StudentAttendanceScreen', 'StudentAttendanceScreen',
-        'OthersInfo', 'NoticeBord', 'studentAssignment', 'StudentHomePage',
-        'StudentAttendanceScreen', 'StudentAttendanceScreen'
-    ]
-}
-df = pd.DataFrame(data)
+# Load the filtered result from the CSV file
+df = pd.read_csv('filtered_result.csv')
 
 print("Original DataFrame:")
 print(df)
@@ -70,10 +57,10 @@ print(report)
 
 # Add a new test record
 new_test_data = pd.DataFrame({
-    'ActivityDateTime': [pd.to_datetime('2024-05-02 22:30:30')],
+    'ActivityDateTime': [pd.to_datetime('2024-05-06 00:00:00')],
     'UserID': [52],
-    'hour': [22],
-    'minute': [30]
+    'hour': [00],
+    'minute': [00]
 })
 
 # Extract features from the new test record

@@ -24,6 +24,9 @@ print(df.head())
 # Set ActivityDateTime as index and sort
 df = df.set_index('ActivityDateTime').sort_index()
 
+# Remove any duplicate entries to avoid reindexing errors
+df = df[~df.index.duplicated(keep='first')]
+
 # Define a function to find the mode in a series of indices
 def mode(series):
     if series.empty:
@@ -45,10 +48,17 @@ result['Most_Frequent_Activity'] = result['Activity_index'].map(index_to_activit
 # Rename the result series for clarity
 result = result[['ActivityDateTime', 'UserID', 'Most_Frequent_Activity']]
 
-# Filter the results to show changes at every 2-minute interval
-filtered_result = result[result['ActivityDateTime'].dt.second % 120 == 0]
+# Set ActivityDateTime as index and sort, removing any duplicates
+result = result.set_index('ActivityDateTime').sort_index()
+result = result[~result.index.duplicated(keep='first')]
 
-print("\nRolling Window Result with Most Frequent Activity (filtered at 2-minute intervals):")
+# Resample the result to show changes on an hourly basis
+result = result.groupby('UserID').resample('H').ffill().reset_index(level=0, drop=True)
+
+# Reset index to make sure 'UserID' is back as a column
+filtered_result = result.reset_index()
+
+print("\nRolling Window Result with Most Frequent Activity (resampled hourly):")
 print(filtered_result)
 
 # Write the filtered result to a CSV file
@@ -60,4 +70,4 @@ print("\nFiltered result has been written to 'filtered_result.csv'")
 loaded_result = pd.read_csv('filtered_result.csv')
 
 print("\nLoaded Filtered Result:")
-print(loaded_result.head())
+print(loaded_result)

@@ -10,15 +10,15 @@ def fetch_users():
             cursor = connection.cursor(dictionary=True)
             query = """
                 SELECT ActivityName, UserID, ActivityDateTime 
-                FROM administration_activity_logs limit 200
+                FROM administration_activity_logs limit 500
             """
             cursor.execute(query)
             records = cursor.fetchall()
             
             # Debugging: print the fetched records
-            print("Fetched records:")
-            for record in records:
-                print(record)
+            # print("Fetched records:")
+            # for record in records:
+            #     print(record)
                 
             return records
         except mysql.connector.Error as e:
