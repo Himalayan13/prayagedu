@@ -17,11 +17,23 @@ df['ActivityDateTime'] = pd.to_datetime(df['ActivityDateTime'])
 df['hour'] = df['ActivityDateTime'].dt.hour
 df['minute'] = df['ActivityDateTime'].dt.minute
 
+# Handle missing values
+# For numerical columns, use mean imputation
+df['hour'].fillna(df['hour'].mean(), inplace=True)
+df['minute'].fillna(df['minute'].mean(), inplace=True)
+
+# For UserID, use mode imputation
+df['UserID'].fillna(df['UserID'].mode()[0], inplace=True)
+
+# For Most_Frequent_Activity, use mode imputation
+mode_activity = df['Most_Frequent_Activity'].mode()[0]
+df['Most_Frequent_Activity'].fillna(mode_activity, inplace=True)
+
 # Encode Most_Frequent_Activity to numerical labels
 df['Activity_label'] = df['Most_Frequent_Activity'].astype('category').cat.codes
 
 # Print the prepared DataFrame
-print("\nPrepared DataFrame:")
+print("\nPrepared DataFrame (after handling missing values):")
 print(df)
 
 # Features and labels
@@ -55,12 +67,17 @@ print(f"\nAccuracy: {accuracy:.2f}")
 print("\nClassification Report:")
 print(report)
 
+# Extract and print only the activity name and activity index
+activity_df = df[['Most_Frequent_Activity', 'Activity_label']].drop_duplicates().reset_index(drop=True)
+print("\nActivity Names and Activity Indices:")
+print(activity_df)
+
 # Add a new test record
 new_test_data = pd.DataFrame({
-    'ActivityDateTime': [pd.to_datetime('2024-05-06 00:00:00')],
-    'UserID': [52],
-    'hour': [00],
-    'minute': [00]
+    'ActivityDateTime': [pd.to_datetime('2024-05-22 15:13:37')],
+    'UserID': [683],
+    'hour': [15],
+    'minute': [13]
 })
 
 # Extract features from the new test record

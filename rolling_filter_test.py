@@ -19,6 +19,12 @@ index_to_activity = {index: activity for activity, index in activity_to_index.it
 df['Activity_index'] = df['ActivityName'].map(activity_to_index)
 
 print("\nDataFrame with Activity Indices:")
+# activity_df = df[['ActivityName', 'Activity_index']]
+# pd.set_option('display.max_rows', None)
+# pd.set_option('display.max_columns', None)
+# pd.set_option('display.width', None)
+# pd.set_option('display.max_colwidth', None)
+
 print(df.head())
 
 # Set ActivityDateTime as index and sort
