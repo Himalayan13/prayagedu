@@ -74,10 +74,10 @@ print(activity_df)
 
 # Add a new test record
 new_test_data = pd.DataFrame({
-    'ActivityDateTime': [pd.to_datetime('2024-05-22 15:13:37')],
-    'UserID': [683],
-    'hour': [15],
-    'minute': [13]
+    'ActivityDateTime': [pd.to_datetime('2024-05-12 12:00:00')],
+    'UserID': [52],
+    'hour': [12],
+    'minute': [00]
 })
 
 # Extract features from the new test record
