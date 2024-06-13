@@ -74,7 +74,7 @@ print(report_gb)
 # Add a new test record for a specific period and activity
 new_test_data = pd.DataFrame({
     'UserID': [683],
-    'Most_Frequent_Activity': ['StudentExamination']
+    'Most_Frequent_Activity': ['StudentAttendanceScreen']
 })
 #Dev added
 
