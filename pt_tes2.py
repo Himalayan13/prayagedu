@@ -76,6 +76,8 @@ new_test_data = pd.DataFrame({
     'UserID': [683],
     'Most_Frequent_Activity': ['StudentExamination']
 })
+#Dev added
+
 
 # One-hot encode the new test record's Most_Frequent_Activity feature
 X_new_test = pd.get_dummies(new_test_data, columns=['Most_Frequent_Activity'])
