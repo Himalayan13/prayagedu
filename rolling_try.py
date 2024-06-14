@@ -50,6 +50,10 @@ result['Most_Frequent_Activity'] = result['Activity_index'].map(index_to_activit
 result = result[['ActivityDateTime', 'UserID', 'Most_Frequent_Activity']]
 
 print("\nRolling Window Result with Most Frequent Activity (Original Time Periods):")
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
 print(result)
 
 # Write the new filtered result to a new CSV file

@@ -5,10 +5,10 @@ def connect_to_mysql():
     """ Connect to MySQL database and test the connection """
     try:
         connection = mysql.connector.connect(
-            host='localhost',          # Replace with your host, e.g., 'localhost'
-            database='prayagedu',      # Replace with your database name
-            user='root',               # Replace with your MySQL username
-            password=''                # Replace with your MySQL password
+            host='localhost',          
+            database='prayagedu',     
+            user='root',               
+            password=''               
         )
 
         if connection.is_connected():

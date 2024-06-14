@@ -81,14 +81,14 @@ def predict_time_period(model, X_train, user_id, activity):
 # Example usage:
 if __name__ == "__main__":
     # Load and prepare data
-    X, y = load_and_prepare_data('filtered_result.csv')
+    X, y = load_and_prepare_data('new_filtered_result.csv')
 
     # Train the classifier
     model, X_train = train_classifier(X, y)
 
     # Predict the time period for a new user and activity
-    user_id = 372
-    activity = 'RoutingScreen'
+    user_id = 183
+    activity = 'Fees'
     predicted_time_period = predict_time_period(model, X_train, user_id, activity)
 
     print(f"\nPredicted Time Period for User ID {user_id} and Activity '{activity}': {predicted_time_period}")
