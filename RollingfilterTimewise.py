@@ -4,10 +4,15 @@ import fetch
 
 # Example data creation (replace with actual fetch function)
 data = fetch.fetch_users()
+
 # Load data into DataFrame
 df = pd.DataFrame(data)
 
 print("Original DataFrame:")
+pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', None)
+pd.set_option('display.max_colwidth', None)
 print(df)
 
 # Convert ActivityDateTime to datetime
@@ -43,8 +48,9 @@ def mode(series):
 # Ensure the index is a datetime-like index
 df.index = pd.to_datetime(df.index)
 
-# Group by UserID and apply rolling window of 2 minutes
-result = df.groupby('UserID')['Activity_index'].rolling('2T', closed='both').apply(lambda x: mode(x), raw=False)
+# Group by UserID and apply rolling window of 2 minutes, with all data points included
+# Use `min_periods=1` to avoid dropping windows with insufficient data points
+result = df.groupby('UserID')['Activity_index'].rolling('2T', closed='both', min_periods=1).apply(lambda x: mode(x), raw=False)
 
 print("\nRolling Window Result with Activity Indices:")
 print(result)
@@ -58,23 +64,34 @@ result['Most_Frequent_Activity'] = result['Activity_index'].map(index_to_activit
 # Rename the result series for clarity
 result = result[['ActivityDateTime', 'UserID', 'Most_Frequent_Activity']]
 
-# Set ActivityDateTime as index and sort, removing any duplicates
-result = result.set_index('ActivityDateTime').sort_index()
-result = result[~result.index.duplicated(keep='first')]
-
-print("\nResult after setting index and removing duplicates:")
+print("\nResult after conversion back to activity names:")
 print(result)
+
+# Set ActivityDateTime as index and sort
+result = result.set_index('ActivityDateTime').sort_index()
+
+# Create a complete datetime index for the range of data
+full_index = pd.date_range(start=result.index.min(), end=result.index.max(), freq='T')
+
+# Reindex the DataFrame to the complete datetime index and forward fill
+result = result.reindex(full_index).ffill()
+
+print("\nResult after reindexing and forward filling:")
+print(result)
+
+# Ensure UserID is forward filled properly
+result['UserID'] = result['UserID'].ffill()
 
 # Resample the result to show changes on an hourly basis
 resampled_result = result.groupby('UserID').resample('H').ffill().reset_index(level=0, drop=True)
 
-print("\nResampled Result:")
+print("\nResampled Result (hourly):")
 print(resampled_result)
 
 # Reset index to make sure 'UserID' is back as a column
 filtered_result = resampled_result.reset_index()
 
-print("\nRolling Window Result with Most Frequent Activity (resampled hourly):")
+print("\nFinal Rolling Window Result with Most Frequent Activity (resampled hourly):")
 print(filtered_result)
 
 # Write the filtered result to a CSV file

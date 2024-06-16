@@ -87,8 +87,8 @@ if __name__ == "__main__":
     model, X_train = train_classifier(X, y)
 
     # Predict the time period for a new user and activity
-    user_id = 183
-    activity = 'Fees'
+    user_id = 683
+    activity = 'StudentAttendanceScreen'
     predicted_time_period = predict_time_period(model, X_train, user_id, activity)
 
     print(f"\nPredicted Time Period for User ID {user_id} and Activity '{activity}': {predicted_time_period}")

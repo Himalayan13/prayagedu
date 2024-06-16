@@ -79,8 +79,8 @@ print(report_period_gb)
 
 # Add a new test record for a specific period
 new_period_test_data = pd.DataFrame({
-    'UserID': [683],
-    'time_period': ['04-05']
+    'UserID': [52],
+    'time_period': ['11-12']
 })
 
 # One-hot encode the new test record's time_period feature

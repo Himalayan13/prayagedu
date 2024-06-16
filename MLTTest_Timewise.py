@@ -34,12 +34,6 @@ df['Activity_label'] = df['Most_Frequent_Activity'].astype('category').cat.codes
 
 # Print the prepared DataFrame
 print("\nPrepared DataFrame (after handling missing values):")
- 
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
-
 print(df)
 
 # Features and labels
@@ -80,10 +74,10 @@ print(activity_df)
 
 # Add a new test record
 new_test_data = pd.DataFrame({
-    'ActivityDateTime': [pd.to_datetime('2024-05-02 22:50:50')],
-    'UserID': [104],
-    'hour': [22],
-    'minute': [50]
+    'ActivityDateTime': [pd.to_datetime('2024-05-03 21:53:43')],
+    'UserID': [52],
+    'hour': [21],
+    'minute': [53]
 })
 
 # Extract features from the new test record

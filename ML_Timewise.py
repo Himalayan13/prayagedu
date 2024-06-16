@@ -73,8 +73,9 @@ if __name__ == "__main__":
     model, X_train = train_model(X, y)
 
     # Add a new test record
-    new_timestamp = pd.to_datetime('2024-05-02 22:50:50')
-    user_id = 104
+    new_timestamp = pd.to_datetime('2024-05-04 14:03:37')
+  
+    user_id = 683
     predicted_activity = predict_activity(model, X_train, user_id, new_timestamp, activity_mapping)
 
     print(f"\nNew Test Record Prediction:")
