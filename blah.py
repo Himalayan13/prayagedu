@@ -1,7 +1,8 @@
 import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import classification_report, accuracy_score
 
 def load_and_prepare_data(file_path):
     # Load the filtered result from the CSV file
@@ -33,10 +34,7 @@ def load_and_prepare_data(file_path):
     X = df[['UserID', 'hour', 'minute']]
     y = df['Activity_label']
 
-    # Get the category names corresponding to the numeric codes
-    activity_names = df['Most_Frequent_Activity'].astype('category').cat.categories
-
-    return X, y, activity_names
+    return X, y, df
 
 def train_classifier(X, y):
     # Split the dataset into training and testing sets
@@ -51,12 +49,16 @@ def train_classifier(X, y):
     # Make predictions on the test set
     y_pred = clf.predict(X_test)
 
+    # Decode the activity labels for the classification report
+    activity_names = y.astype('category').cat.categories
+
     # Evaluate the model's performance
     accuracy = accuracy_score(y_test, y_pred)
+    report = classification_report(y_test, y_pred, target_names=activity_names)
 
-    return clf, accuracy, X_train.columns
+    return clf, accuracy, report, activity_names, X_train
 
-def predict_activity(model, X_train_columns, activity_names, user_id, timestamp):
+def predict_activity(model, X_train, activity_names, user_id, timestamp):
     # Extract hour and minute from timestamp
     timestamp = pd.to_datetime(timestamp)
     hour = timestamp.hour
@@ -69,30 +71,38 @@ def predict_activity(model, X_train_columns, activity_names, user_id, timestamp)
         'minute': [minute]
     })
 
+    # Extract features from the new test record
+    X_new_test = new_test_data[['UserID', 'hour', 'minute']]
+
     # Align the new test record with the training data columns
-    X_new_test = new_test_data.reindex(columns=X_train_columns, fill_value=0)
+    X_new_test = X_new_test.reindex(columns=X_train.columns, fill_value=0)
 
     # Predict the activity for the new test record
     new_pred = model.predict(X_new_test)
-    
-    # Convert numeric label to activity name using activity_names array
     new_pred_activity = activity_names[new_pred[0]]
 
     return new_pred_activity
 
 if __name__ == "__main__":
     # Load and prepare data
-    X, y, activity_names = load_and_prepare_data('filtered_result.csv')
+    X, y, df = load_and_prepare_data('filtered_result.csv')
 
     # Train the classifier
-    model, accuracy, X_train_columns = train_classifier(X, y)
+    model, accuracy, report, activity_names, X_train = train_classifier(X, y)
 
     # Print the evaluation results
     print(f"\nRandom Forest Classifier Accuracy: {accuracy:.2f}")
+    print("\nRandom Forest Classifier Classification Report:")
+    print(report)
+
+    # Extract and print only the activity name and activity index
+    activity_df = df[['Most_Frequent_Activity', 'Activity_label']].drop_duplicates().reset_index(drop=True)
+    print("\nActivity Names and Activity Indices:")
+    print(activity_df)
 
     # Predict the activity for a new user and timestamp
     user_id = 52
     timestamp = '2024-05-03 21:53:43'
-    predicted_activity = predict_activity(model, X_train_columns, activity_names, user_id, timestamp)
+    predicted_activity = predict_activity(model, X_train, activity_names, user_id, timestamp)
 
     print(f"\nPredicted Most Frequent Activity for User ID {user_id} at {timestamp}: {predicted_activity}")

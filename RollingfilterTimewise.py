@@ -2,20 +2,14 @@ import pandas as pd
 from collections import Counter
 import fetch
 
-# Example data creation (replace with actual fetch function)
+# Example data creation
 data = fetch.fetch_users()
-
-# Load data into DataFrame
 df = pd.DataFrame(data)
 
 print("Original DataFrame:")
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
-print(df)
+print(df.head())
 
-# Convert ActivityDateTime to datetime
+# Convert ActivityDateTime to datetime if not already
 df['ActivityDateTime'] = pd.to_datetime(df['ActivityDateTime'])
 
 # Convert ActivityName to numerical indices
@@ -25,19 +19,13 @@ index_to_activity = {index: activity for activity, index in activity_to_index.it
 df['Activity_index'] = df['ActivityName'].map(activity_to_index)
 
 print("\nDataFrame with Activity Indices:")
-print(df)
+print(df.head())
 
 # Set ActivityDateTime as index and sort
 df = df.set_index('ActivityDateTime').sort_index()
 
-print("\nDataFrame after setting index and sorting:")
-print(df)
-
 # Remove any duplicate entries to avoid reindexing errors
 df = df[~df.index.duplicated(keep='first')]
-
-print("\nDataFrame after removing duplicates:")
-print(df)
 
 # Define a function to find the mode in a series of indices
 def mode(series):
@@ -48,12 +36,8 @@ def mode(series):
 # Ensure the index is a datetime-like index
 df.index = pd.to_datetime(df.index)
 
-# Group by UserID and apply rolling window of 2 minutes, with all data points included
-# Use `min_periods=1` to avoid dropping windows with insufficient data points
-result = df.groupby('UserID')['Activity_index'].rolling('2T', closed='both', min_periods=1).apply(lambda x: mode(x), raw=False)
-
-print("\nRolling Window Result with Activity Indices:")
-print(result)
+# Group by UserID and apply rolling window of 2 minutes
+result = df.groupby('UserID')['Activity_index'].rolling('2T', closed='both').apply(lambda x: mode(x), raw=False)
 
 # Reset index to make it more readable
 result = result.reset_index()
@@ -64,34 +48,17 @@ result['Most_Frequent_Activity'] = result['Activity_index'].map(index_to_activit
 # Rename the result series for clarity
 result = result[['ActivityDateTime', 'UserID', 'Most_Frequent_Activity']]
 
-print("\nResult after conversion back to activity names:")
-print(result)
-
-# Set ActivityDateTime as index and sort
+# Set ActivityDateTime as index and sort, removing any duplicates
 result = result.set_index('ActivityDateTime').sort_index()
-
-# Create a complete datetime index for the range of data
-full_index = pd.date_range(start=result.index.min(), end=result.index.max(), freq='T')
-
-# Reindex the DataFrame to the complete datetime index and forward fill
-result = result.reindex(full_index).ffill()
-
-print("\nResult after reindexing and forward filling:")
-print(result)
-
-# Ensure UserID is forward filled properly
-result['UserID'] = result['UserID'].ffill()
+result = result[~result.index.duplicated(keep='first')]
 
 # Resample the result to show changes on an hourly basis
-resampled_result = result.groupby('UserID').resample('H').ffill().reset_index(level=0, drop=True)
-
-print("\nResampled Result (hourly):")
-print(resampled_result)
+result = result.groupby('UserID').resample('H').ffill().reset_index(level=0, drop=True)
 
 # Reset index to make sure 'UserID' is back as a column
-filtered_result = resampled_result.reset_index()
+filtered_result = result.reset_index()
 
-print("\nFinal Rolling Window Result with Most Frequent Activity (resampled hourly):")
+print("\nRolling Window Result with Most Frequent Activity (resampled hourly):")
 print(filtered_result)
 
 # Write the filtered result to a CSV file
@@ -103,8 +70,4 @@ print("\nFiltered result has been written to 'filtered_result.csv'")
 loaded_result = pd.read_csv('filtered_result.csv')
 
 print("\nLoaded Filtered Result:")
-pd.set_option('display.max_rows', None)
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', None)
-pd.set_option('display.max_colwidth', None)
 print(loaded_result)
