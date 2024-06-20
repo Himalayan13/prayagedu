@@ -32,6 +32,12 @@ def fetch_analysis_inputs():
 
     return analysis_inputs, analysis_types
 
+def fetch_unique_user_ids(engine):
+    # Query to fetch unique user IDs from the administration_activity_logs table
+    query = "SELECT DISTINCT UserID FROM administration_activity_logs"
+    user_ids = pd.read_sql(query, engine)['UserID'].tolist()
+    return user_ids
+
 def insert_analysis_data_timewise(engine, user_id, timestamp, predicted_activity):
     # Create a connection to the database
     connection = engine.raw_connection()
@@ -78,55 +84,53 @@ def main():
         # Fetch all analysis inputs and types from the database
         analysis_inputs, analysis_types = fetch_analysis_inputs()
 
-#get the distinct userid from the log file and make a loop for this analysis for all the users
+        # Fetch unique user IDs from the administration_activity_logs table
+        user_ids = fetch_unique_user_ids(engine)
 
-        for input_data, analysis_type in zip(analysis_inputs, analysis_types):
-            if analysis_type == 'TimeWise':
-                # Define a predefined user ID
-                user_id = 683    
-                timestamp = input_data.get('Timestamp')
+        for user_id in user_ids:
+            for input_data, analysis_type in zip(analysis_inputs, analysis_types):
+                if analysis_type == 'TimeWise':
+                    timestamp = input_data.get('Timestamp')
 
-                if not timestamp:
-                    print("No timestamp found in input data.")
-                    continue
+                    if not timestamp:
+                        print("No timestamp found in input data.")
+                        continue
 
-                # Load and prepare data for TimeWise analysis
-                X, y, activity_names = load_and_prepare_data_timewise('filtered_result.csv')
+                    # Load and prepare data for TimeWise analysis
+                    X, y, activity_names = load_and_prepare_data_timewise('filtered_result.csv')
 
-                # Train the classifier for TimeWise analysis
-                model, accuracy, X_train_columns = train_classifier_timewise(X, y)
+                    # Train the classifier for TimeWise analysis
+                    model, accuracy, X_train_columns = train_classifier_timewise(X, y)
 
-                # Predict the activity for the given timestamp
-                predicted_activity = predict_activity(model, X_train_columns, activity_names, user_id, timestamp)
-                print(f"\nPredicted Activity for User ID {user_id} and Timestamp '{timestamp}': {predicted_activity}")
+                    # Predict the activity for the given timestamp
+                    predicted_activity = predict_activity(model, X_train_columns, activity_names, user_id, timestamp)
+                    print(f"\nPredicted Activity for User ID {user_id} and Timestamp '{timestamp}': {predicted_activity}")
 
-                # Insert predicted data into analysis_timewise table
-                insert_analysis_data_timewise(engine, user_id, timestamp, predicted_activity)
+                    # Insert predicted data into analysis_timewise table
+                    insert_analysis_data_timewise(engine, user_id, timestamp, predicted_activity)
 
-            elif analysis_type == 'ActivityWise':
-                # Define a predefined user ID
-                user_id = 683
-                activity = input_data.get('FrequentActivity')
+                elif analysis_type == 'ActivityWise':
+                    activity = input_data.get('FrequentActivity')
 
-                if not activity:
-                    print("No a0ctivity found in input data.")
-                    continue
+                    if not activity:
+                        print("No activity found in input data.")
+                        continue
 
-                # Load and prepare data for ActivityWise analysis
-                X, y = load_and_prepare_data_actwise('new_filtered_result.csv')
+                    # Load and prepare data for ActivityWise analysis
+                    X, y = load_and_prepare_data_actwise('new_filtered_result.csv')
 
-                # Train the classifier for ActivityWise analysis
-                model, X_train = train_classifier_actwise(X, y)
+                    # Train the classifier for ActivityWise analysis
+                    model, X_train = train_classifier_actwise(X, y)
 
-                # Predict the time period for the given activity
-                predicted_time_period = predict_time_period(model, X_train, user_id, activity)
-                print(f"\nPredicted Time Period for User ID {user_id} and Activity '{activity}': {predicted_time_period}")
+                    # Predict the time period for the given activity
+                    predicted_time_period = predict_time_period(model, X_train, user_id, activity)
+                    print(f"\nPredicted Time Period for User ID {user_id} and Activity '{activity}': {predicted_time_period}")
 
-                # Insert predicted data into analysis_activitywise table
-                insert_analysis_data_actwise(engine, user_id, activity, predicted_time_period)
+                    # Insert predicted data into analysis_activitywise table
+                    insert_analysis_data_actwise(engine, user_id, activity, predicted_time_period)
 
-            else:
-                print(f"Unknown AnalysisType: {analysis_type}")
+                else:
+                    print(f"Unknown AnalysisType: {analysis_type}")
 
     except Exception as e:
         print(f"An error occurred: {str(e)}")
