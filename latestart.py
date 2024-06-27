@@ -2,13 +2,11 @@ import pandas as pd
 from datetime import datetime, timedelta
 import fetch 
 
-# Sample data to mimic database records
+# Sample data to mimic database 
 data = fetch.fetch_users()
 
-# Convert the sample data into a DataFrame
 df = pd.DataFrame(data)
 
-# Convert AttendanceDateTime to datetime
 df['AttendanceDateTime'] = pd.to_datetime(df['AttendanceDateTime'])
 
 # Manually specify the current date
@@ -23,7 +21,7 @@ last_week_data = df[df['AttendanceDateTime'] >= one_week_ago]
 # Count the number of late occurrences for each student
 late_counts = last_week_data['AcademicID'].value_counts()
 
-# Determine the threshold for being frequently late (e.g., more than once in the last week)
+# Determine the threshold for being lat
 threshold = 1
 frequent_offenders = late_counts[late_counts > threshold]
 

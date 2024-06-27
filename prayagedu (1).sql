@@ -1283,3 +1283,70 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-- prayagedu.late_record definition
+
+CREATE TABLE `late_record` (
+  `AttendanceLateID` int(11) NOT NULL,
+  `AttendanceDateTime` datetime DEFAULT NULL,
+  `EnteredBy` int(11) DEFAULT NULL,
+  `ClassSectionID` tinyint(4) DEFAULT NULL,
+  `AcademicID` int(11) DEFAULT NULL,
+  `Remarks` varchar(255) DEFAULT NULL,
+  `SessionID` tinyint(4) DEFAULT NULL
+);
+
+INSERT INTO attendance_late (AttendanceLateID, AttendanceDateTime, EnteredBy, ClassSectionID, AcademicID, Remarks, SessionID)
+VALUES
+(1, '2023-06-01 08:30:00', 101, 1, 1001, 'Late arrival', 1),
+(2, '2023-06-02 09:00:00', 102, 1, 1002, 'Late due to traffic', 1),
+(3, '2023-06-03 08:45:00', 103, 1, 1003, 'Overslept', 1),
+(4, '2023-06-04 08:55:00', 104, 1, 1004, 'Late arrival', 1),
+(5, '2023-06-05 09:10:00', 105, 1, 1005, 'Missed the bus', 1),
+(6, '2023-06-06 08:40:00', 106, 1, 1006, 'Doctor appointment', 1),
+(7, '2023-06-07 08:50:00', 107, 1, 1007, 'Traffic congestion', 1),
+(8, '2023-06-08 08:25:00', 108, 1, 1008, 'Overslept', 1),
+(9, '2023-06-09 09:05:00', 109, 1, 1009, 'Late due to rain', 1),
+(10, '2023-06-10 08:55:00', 110, 1, 1010, 'Late arrival', 1),
+(11, '2023-06-11 08:30:00', 111, 1, 1001, 'Late arrival', 1),
+(12, '2023-06-12 09:00:00', 112, 1, 1002, 'Late due to traffic', 1),
+(13, '2023-06-13 08:45:00', 113, 1, 1003, 'Overslept', 1),
+(14, '2023-06-14 08:55:00', 114, 1, 1004, 'Late arrival', 1),
+(15, '2023-06-15 09:10:00', 115, 1, 1005, 'Missed the bus', 1),
+(16, '2023-06-16 08:40:00', 116, 1, 1006, 'Doctor appointment', 1),
+(17, '2023-06-17 08:50:00', 117, 1, 1007, 'Traffic congestion', 1),
+(18, '2023-06-18 08:25:00', 118, 1, 1008, 'Overslept', 1),
+(19, '2023-06-19 09:05:00', 119, 1, 1009, 'Late due to rain', 1),
+(20, '2023-06-20 08:55:00', 120, 1, 1010, 'Late arrival', 1),
+(21, '2023-06-21 08:30:00', 121, 1, 1001, 'Late arrival', 1),
+(22, '2023-06-22 09:00:00', 122, 1, 1002, 'Late due to traffic', 1),
+(23, '2023-06-23 08:45:00', 123, 1, 1003, 'Overslept', 1),
+(24, '2023-06-24 08:55:00', 124, 1, 1004, 'Late arrival', 1),
+(25, '2023-06-25 09:10:00', 125, 1, 1005, 'Missed the bus', 1),
+(26, '2023-06-26 08:40:00', 126, 1, 1006, 'Doctor appointment', 1),
+(27, '2023-06-27 08:50:00', 127, 1, 1007, 'Traffic congestion', 1),
+(28, '2023-06-28 08:25:00', 128, 1, 1008, 'Overslept', 1),
+(29, '2023-06-29 09:05:00', 129, 1, 1009, 'Late due to rain', 1),
+(30, '2023-06-30 08:55:00', 130, 1, 1010, 'Late arrival', 1),
+(31, '2023-07-01 08:30:00', 131, 1, 1001, 'Late arrival', 1),
+(32, '2023-07-02 09:00:00', 132, 1, 1002, 'Late due to traffic', 1),
+(33, '2023-07-03 08:45:00', 133, 1, 1003, 'Overslept', 1),
+(34, '2023-07-04 08:55:00', 134, 1, 1004, 'Late arrival', 1),
+(35, '2023-07-05 09:10:00', 135, 1, 1005, 'Missed the bus', 1),
+(36, '2023-07-06 08:40:00', 136, 1, 1006, 'Doctor appointment', 1),
+(37, '2023-07-07 08:50:00', 137, 1, 1007, 'Traffic congestion', 1),
+(38, '2023-07-08 08:25:00', 138, 1, 1008, 'Overslept', 1),
+(39, '2023-07-09 09:05:00', 139, 1, 1009, 'Late due to rain', 1),
+(40, '2023-07-10 08:55:00', 140, 1, 1010, 'Late arrival', 1),
+(41, '2023-07-11 08:30:00', 141, 1, 1001, 'Late arrival', 1),
+(42, '2023-07-12 09:00:00', 142, 1, 1002, 'Late due to traffic', 1),
+(43, '2023-07-13 08:45:00', 143, 1, 1003, 'Overslept', 1),
+(44, '2023-07-14 08:55:00', 144, 1, 1004, 'Late arrival', 1),
+(45, '2023-07-15 09:10:00', 145, 1, 1005, 'Missed the bus', 1),
+(46, '2023-07-16 08:40:00', 146, 1, 1006, 'Doctor appointment', 1),
+(47, '2023-07-17 08:50:00', 147, 1, 1007, 'Traffic congestion', 1),
+(48, '2023-07-18 08:25:00', 148, 1, 1008, 'Overslept', 1),
+(49, '2023-07-19 09:05:00', 149, 1, 1009, 'Late due to rain', 1),
+(50, '2023-07-20 08:55:00', 150, 1, 1010, 'Late arrival', 1),
+(51, '2023-07-21 08:30:00', 151, 1, 1001, 'Late arrival', 1),
