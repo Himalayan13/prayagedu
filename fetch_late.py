@@ -10,7 +10,7 @@ def fetch_users():
             cursor = connection.cursor(dictionary=True)
             query = """
                 SELECT AttendanceLateID, AttendanceDateTime, EnteredBy, ClassSectionID, AcademicID, Remarks, SessionID 
-                FROM attendance_late limit 500
+                FROM late_record limit 500
             """
             cursor.execute(query)
             records = cursor.fetchall()
